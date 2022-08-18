@@ -7,48 +7,201 @@
     <title>Document</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="/Landingpage/css/classLanding.css">
+  </head>
     <script src="https://kit.fontawesome.com/ff282683fb.js" crossorigin="anonymous"></script>
 <body>
-    <div>
+    <div class="container py-5">
         <div>
             <header>
-                <div>
                     <nav>
-                        <nav class="navbar navbar-expand-lg bg-light">
-                            <div class="container-fluid">
-                              <a class="navbar-brand" href="#">Navbar</a>
-                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                              </button>
-                              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                                <ul class="navbar-nav">
-                                  <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link disabled">Disabled</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </nav>
+                      <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+                        <div class="container container-fluid">
+                          <a class="navbar-brand" href="">
+                            <img src="https://aprendeinversioninmobiliaria.com/img/logo/aprende-de-inversion-inmobiliaria-logo-blanco.svg" width="134" class="d-inline-block align-text-top p">
+                          </a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Quién Soy</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Primeros pasos</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" href="#">Cursos</a>                          
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" href="#">Toma acción</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
                     </nav>
-                </div>
             </header>
         </div>
         <main>
-            <div>
+            <!-- Jumbotron -->
+            <div class="mb-4 bg-light rounded-3" >
+                <div class="container-fluid py-5" style="background-image: url(/Landingpage/IMG/fondoHeader.png);">
+                  <h1 class="display-5 fw-bold">Invierte ahora</h1>
+                  <p class="col-md-8 fs-4">Toma tus finanzas en tus manos con herramientas prácticas y consejos díarios en mis redes sociales.</p>
+                    <form>
+                      <h5 class="display-7 fw-bold">Subscribe a mi comunidad</h5>
+                      <p>Entérate primero de todo lo que sé y mis próximos movimientos</p>
+                      <div class="col-4">
+                        <label for="newsletter1" class="visually-hidden">Correo electrónico</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Correo electrónico">
+                        <button class="btn btn-primary btn-lg" type="button">Subscríbete</button>
+                      </div>
+                    </form>
+                </div>
+              </div>
+              <!-- Quien soy -->
+              <div class="containerQS">
+                  <div>
+                    <img class="imgQS" src="/Landingpage/IMG/DSC06280.jpg">
+                  </div>
+                  <div>
+                    <h1 class="h1">Francisco Ackermann</h1>
+                    <p>Si la inversión no es lo tuyo, lo mío tampoco... Así pensaba yo hace 9 años cuando me decidí a invertir en mi primer departamento y lo hice, sin conocimiento, sin experiencia y con lo ahorrado, que no era mucho. Con eso me lance a las inversiones y 5 años después vendí ese departamento tomando una ganancia de más de 30.000 USD y ahí la confianza se apoderó de mí... ¡Pero lo perdí todo!.</p>
+                    <p> Ahora, 4 años más tarde, después de entender y practicar el camino de la educación financiera, he multiplicado mis inversiones y las he diversificado.</p>
+                    <P>Este es mi camino y en cada espacio podrás seguirlo y descubrir qué he hecho y cómo</P>
+                    <p>No olvides estudiar</p>
+                  </div>
+              </div>
+          </div>
+              <!-- Primeros pasos -->
+              <div>
+                <div class="container px-4 py-5" id="custom-cards">
+                    <h2 class="pb-2 border-bottom" style="background-color: #ffb923;">Primeros pasos</h2>
+                    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                      <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Podcast</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                              <li class="me-auto">
+                                <img src="/Landingpage/IMG/Logo.png" alt="Bootstrap" width="70" height="70">
+                              </li>
+                              <li class="d-flex align-items-end me-3">
+                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                                <small>Con peras y finanzas</small>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+                          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Audiolibro</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                              <li class="me-auto">
+                                <img src="https://e7.pngegg.com/pngimages/473/270/png-clipart-audible-amazon-com-logo-audiobook-aws-text-logo.png" alt="Bootstrap" width="90">
+                              </li>
+                              <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                                <small>Piense y hágase rico</small>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+                          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Youtube</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                              <li class="me-auto">
+                                <img src="https://melvinbrea.com/wp-content/uploads/2021/10/Logo-YouTube-sin-fondo-y-editable.png" alt="Bootstrap" width="70">
+                              </li>
+                              <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                                <small>Aprende de inversión</small>
+                              </li>
+                              </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="b-example-divider"></div>                
+              </div>
+              <!-- Cursos -->
+              <div>
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                  <div class="my-3 py-3">
+                    <h2 class="display-5">Challenge Inmobiliario</h2>
+                    <p class="lead">By ThePowerChallenge</p>
+                  </div>
+                  <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                </div>
+                <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                  <div class="my-3 p-3">
+                    <h2 class="display-5">Curso de inversión básico</h2>
+                    <p class="lead">By ThePowerChallenge</p>
+                  </div>
+                  <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                </div>
+              </div>
+              </div>
+              <!-- Marketplace -->
+              <div>
 
-            </div>
-            
+              </div>
         </main>
+        <footer>
+            <div>
+                <div class="container">
+                <footer class="py-5">
+                  <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                      <h5>Section</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                      <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                          <label for="newsletter1" class="visually-hidden">Email address</label>
+                          <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                          <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+              
+                  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                    </ul>
+                  </div>
+                </footer>
+              </div>                
+            </div>
+        </footer>
     </div>
    
 <!-- JavaScript Bundle with Popper -->
