@@ -14,7 +14,7 @@
     <div class="container py-5">
         <div>
             <header>
-                    <nav>
+                    <nav id="nav">
                       <nav class="navbar navbar-expand-lg bg-black navbar-dark">
                         <div class="container container-fluid">
                           <a class="navbar-brand" href="">
@@ -26,16 +26,13 @@
                           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                             <ul class="navbar-nav">
                               <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#nav">Home</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Quién Soy</a>
+                                <a class="nav-link active" aria-current="page" href="#QuienSoy">Quién Soy</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Primeros pasos</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link active" href="#">Cursos</a>                          
+                                <a class="nav-link active" aria-current="page" href="#PP">Primeros pasos</a>
                               </li>
                               <li class="nav-item">
                                 <a class="nav-link active" href="#">Toma acción</a>
@@ -50,7 +47,7 @@
         <main>
             <!-- Jumbotron -->
             <div class="mb-4 bg-light rounded-3" >
-                <div class="container-fluid py-5" style="background-image: url(/Landingpage/IMG/fondoHeader.png);">
+                <div class="container-fluid py-5 px-5" style="background-image: url(/Landingpage/IMG/fondoHeader.png);">
                   <h1 class="display-5 fw-bold">Invierte ahora</h1>
                   <p class="col-md-8 fs-4">Toma tus finanzas en tus manos con herramientas prácticas y consejos díarios en mis redes sociales.</p>
                     <form>
@@ -65,7 +62,7 @@
                 </div>
               </div>
               <!-- Quien soy -->
-              <div class="containerQS">
+              <div class="containerQS" id="QuienSoy">
                   <div>
                     <img class="imgQS" src="/Landingpage/IMG/DSC06280.jpg">
                   </div>
@@ -79,124 +76,189 @@
               </div>
           </div>
               <!-- Primeros pasos -->
-              <div>
-                <div class="container px-4 py-5" id="custom-cards">
-                    <h2 class="pb-2 border-bottom" style="background-color: #ffb923;">Primeros pasos</h2>
-                    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                      <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-                          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Podcast</h2>
-                            <ul class="d-flex list-unstyled mt-auto">
-                              <li class="me-auto">
-                                <img src="/Landingpage/IMG/Logo.png" alt="Bootstrap" width="70" height="70">
-                              </li>
-                              <li class="d-flex align-items-end me-3">
-                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                                <small>Con peras y finanzas</small>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                
-                      <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-                          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Audiolibro</h2>
-                            <ul class="d-flex list-unstyled mt-auto">
-                              <li class="me-auto">
-                                <img src="https://e7.pngegg.com/pngimages/473/270/png-clipart-audible-amazon-com-logo-audiobook-aws-text-logo.png" alt="Bootstrap" width="90">
-                              </li>
-                              <li class="d-flex align-items-center me-3">
-                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                                <small>Piense y hágase rico</small>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                
-                      <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-                          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Youtube</h2>
-                            <ul class="d-flex list-unstyled mt-auto">
-                              <li class="me-auto">
-                                <img src="https://melvinbrea.com/wp-content/uploads/2021/10/Logo-YouTube-sin-fondo-y-editable.png" alt="Bootstrap" width="70">
-                              </li>
-                              <li class="d-flex align-items-center me-3">
-                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                                <small>Aprende de inversión</small>
-                              </li>
-                              </ul>
-                          </div>
+              <div class="px-5 py-0" id="PP">
+                <div class="container px-5 py-5" id="custom-cards" style="background-color: #ffb923;">
+                  <h2 class="pb-2 display-5 fw-bolder ">Primeros pasos</h2>
+                  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://is3-ssl.mzstatic.com/image/thumb/Podcasts124/v4/dd/d5/65/ddd5652f-2d11-417d-8005-dccae4bfa033/mza_1306134555083348256.jpg/1280x1280bb-75.jpg')">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-black text-shadow-1">
+                          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Podcast</h2>
+                          <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/1024px-Spotify_logo_with_text.svg.png" alt="Bootstrap" width="70">
+                            </li>
+                            <li class="d-flex align-items-end me-3">
+                              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                              <small>Con peras y finanzas</small>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://m.media-amazon.com/images/I/51FQSOFzGHL._SL500_.jpg')">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-black text-shadow-1">
+                          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Podcast</h2>
+                          <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/1024px-Spotify_logo_with_text.svg.png" alt="Bootstrap" width="70">
+                            </li>
+                            <li class="d-flex align-items-end me-3">
+                              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                              <small>Con peras y finanzas</small>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://m.media-amazon.com/images/I/51ZDTBDIiQL._SL300_.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Audiolibro</h2>
+                          <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                              <img src="https://e7.pngegg.com/pngimages/473/270/png-clipart-audible-amazon-com-logo-audiobook-aws-text-logo.png" alt="Bootstrap" width="70">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                              <small>Piense y hágase rico</small>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('data:image/jpeg;base64,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');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Audiolibro</h2>
+                          <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                              <img src="https://e7.pngegg.com/pngimages/473/270/png-clipart-audible-amazon-com-logo-audiobook-aws-text-logo.png" alt="Bootstrap" width="70">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                              <small>Hábitos</small>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDvuTUh7SySqrSBKhD5C54yozd2lfO19s28Q&usqp=CAU');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Youtube</h2>
+                          <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                              <img src="https://melvinbrea.com/wp-content/uploads/2021/10/Logo-YouTube-sin-fondo-y-editable.png" alt="" width="70">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                              <small>Nicolás Palacios</small>
+                            </li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://yt3.ggpht.com/_fojvheMDTi4nrbfVv8LqWBkr41GS9wcezdc8B2ZSO9Xofuy5K0bx7CAWuhHUA8o1YFJIF4Z=s176-c-k-c0x00ffffff-no-rj');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Youtube</h2>
+                          <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                              <img src="https://melvinbrea.com/wp-content/uploads/2021/10/Logo-YouTube-sin-fondo-y-editable.png" alt="Bootstrap" width="70">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                              <small>Mirk Tilbury</small>
+                            </li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div> 
                   </div>
-                
-                  <div class="b-example-divider"></div>                
-              </div>
-              <!-- Cursos -->
-              <div>
-                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-                <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                  <div class="my-3 py-3">
-                    <h2 class="display-5">Challenge Inmobiliario</h2>
-                    <p class="lead">By ThePowerChallenge</p>
-                  </div>
-                  <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
                 </div>
-                <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                  <div class="my-3 p-3">
-                    <h2 class="display-5">Curso de inversión básico</h2>
-                    <p class="lead">By ThePowerChallenge</p>
+              <div class="b-example-divider"></div>              
+            </div>
+            <!-- Marketplace -->
+            <section class="Marketplace" id="TomaAccion">
+              <h1 class="h1MK">Toma acción</h1>
+              <div class="d-flex">
+                <div class="tarjetas">
+                  <div class="imagenbanner">
+                    <img src="/Landingpage/IMG/Logo TPC.png" alt="">
                   </div>
-                  <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                  <div class="banner">
+                    <img src="/Landingpage/IMG/Foto-Portada-Curso-de-inversion.jpg" alt="">
+                  </div>  
+                  <div class="contenido">
+                    <p>Comienza a usar tu dinero como herramienta de crecimiento a través de la inversión. Este curso te facilitará el camino entregándote los conocimientos y herramientas necesarias para emprender tus primeros pasos en la inversión fácilmente.</p>
+                  </div>
+                </div>
+                <div class="tarjetas">
+                  <div class="imagenbanner">
+                    <img src="/Landingpage/IMG/Logo TPC.png" alt="">
+                  </div>
+                  <div class="banner">
+                    <img src="/Landingpage/IMG/Portadas_Portada CH Inmobiliario copia 5.jpg" alt="">
+                  </div>  
+                  <div class="contenido">
+                    <p>El entrenamiento que te enseña cómo encontrar las mejores oportunidades de inversión del mercado inmobiliario.¡Aunque no sepas nada de inversión!</p>
+                  </div>
+                </div>
+                <div class="tarjetas">
+                  <div class="imagenbanner">
+                    <img src="/Landingpage/IMG/Logo TPC.png" alt="">
+                  </div>
+                  <div class="banner">
+                    <img src="/Landingpage/IMG/Portadas_Portada-Finanzas-Personales.jpg" alt="">
+                  </div>  
+                  <div class="contenido">
+                    <p>Tomarás el control de tus finanzas a través de la planificación, el autoconocimiento financiero y las estrategias para que tu dinero sea una herramienta de crecimiento, y no un dolor de cabeza.</p>
+                  </div>
+                </div>
+                <div class="tarjetas">
+                  <div class="imagenbanner">
+                    <img src="/Landingpage/IMG/Logo TPC.png" alt="">
+                  </div>
+                  <div class="banner">
+                    <img src="/Landingpage/IMG/_Portada-CH-Cripto-Recargado.jpg" alt="">
+                  </div>  
+                  <div class="contenido">
+                    <p>En este desafío online de 3 días, tendrás las herramientas necesarias para que tu portafolio digital de criptos y NFTs te genere ganancias.</p>
+                  </div>
                 </div>
               </div>
-              </div>
-              <!-- Marketplace -->
-              <div>
-
-              </div>
+            </section>
         </main>
         <footer>
             <div>
                 <div class="container">
-                <footer class="py-5">
+                <footer class="px-5">
                   <div class="row">
                     <div class="col-6 col-md-2 mb-3">
-                      <h5>Section</h5>
+                      <h5>Secciones</h5>
                       <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="#nav" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#QuienSoy" class="nav-link p-0 text-muted">Quien Soy</a></li>
+                        <li class="nav-item mb-2"><a href="#PP" class="nav-link p-0 text-muted">Primeros Pasos</a></li>
+                        <li class="nav-item mb-2"><a href="#TomaAccion" class="nav-link p-0 text-muted">Toma Acción</a></li>
                       </ul>
                     </div>
-                    <div class="col-md-5 offset-md-1 mb-3">
+                    <div class="col-md-5 offset-md-3 mb-5">
                       <form>
-                        <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of what's new and exciting from us.</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                          <label for="newsletter1" class="visually-hidden">Email address</label>
-                          <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                          <button class="btn btn-primary" type="button">Subscribe</button>
+                        <h5>Entérate primero de mis inversiones</h5>
+                        <p>Deja tu correo y podrás ser parte del selecto grupo</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-5">
+                          <label for="newsletter1" class="visually-hidden"></label>
+                          <input id="newsletter1" type="text" class="form-control" placeholder="Correo electrónico">
+                          <button class="btn btn-primary" type="button">Subscríbete</button>
                         </div>
                       </form>
                     </div>
                   </div>
-              
-                  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                    <p>&copy; 2022 Company, Inc. All rights reserved.</p>
-                    <ul class="list-unstyled d-flex">
-                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-                    </ul>
+                  <div class="d-flex flex-column flex-sm-row justify-content-between px-5 py-4 my-4 border-top text-bg-light">
+                    <p>&copy;2022 Francisco Ackermann. Todos los derechos reservados.</p>
                   </div>
                 </footer>
               </div>                
@@ -207,4 +269,4 @@
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>    
 </body>
-</html>
+</html> 
